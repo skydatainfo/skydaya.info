@@ -43,7 +43,7 @@ jobs:
     steps:
     # Downloading build artifact
     - name: Download Build Artifact
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       continue-on-error: false
       with:
         name: buildartifacts
@@ -51,7 +51,7 @@ jobs:
 
   # Downloading Arm Template
     - name: Download Arm Template
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       continue-on-error: false
       with:
         name: deploymenttemplates
